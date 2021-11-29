@@ -1,0 +1,101 @@
+<html lang="eng">
+<head>
+    <title>Dot com</title>
+    <link rel="stylesheet" href="article1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<div class="hero">
+
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+
+
+            <li><a href="#">Video</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="invention.html">Invention of the internet</a></li>
+                        <li><a href="browserwars.html">Browser wars</a></li>
+                        <li><a href="internet-search.html">Internet Search</a></li>
+                        <li><a href="dot-com.html">Dot Com Bubble</a></li>
+                        <li><a href="People.html">People</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="articles.html">Articles</a></li>
+
+
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="row">
+        <div class="col-1">
+            <h5>Dot com</h5>
+            <p>In the 1990s, there were 2 men who saw the Internet as a place of business. Jeff Bezos, with his market analyses and research, wanted to methodically create an online business. Pierre Omidyar, a humble software engineer, thought it would be cool to create an online auction site. Ebay would be fairer and more accessible than any existing market, putting individuals and companies on an even playing field. Amazon was planning on selling books and becoming profitable over time. However, within weeks, they were selling books in 45 countries and all 50 states. This sudden explosive growth drew the eyes of Wall Street. Users and customers alike were wary, however, as providing a website with credit card information was potentially unsafe. These fears were quelled by the invention of public key cryptography, allowing for the secure transfer of information between clients without the possibility of outside disruption. Amazon, even as they lost money, successfully marketed to Wall Street by claiming to be “the world’s bookstore” and hyping up their profit potential. Ebay, while in theory successful eCommerce, made Wall Street tentative. They weren’t sure if the web was just a fad or the future of commerce. Ebay found its success in collectors.
+                A huge portion of the site’s sales were of toys and collectibles. In fact, 8% of the site’s listings at one point were Beanie Babies. The time when Ebay made its IPO was an unsure market with the Russian financial recession. However, their offering was a success and they were worth $2 billion. This triggered investors to go crazy over any company with “.com” in the name. Money was thrown left and right at tech startups, beginning an investment bubble. Even companies with no profit received funding. A number of factors spelled the beginning of the end for the bubble. The Y2K scare, involving computers not being able to handle the turn of the century, caused fear in the market; though there was no negative effect due to the vigilance of programmers. Alan Greenspan, chair of the federal reserve, used this as an opportunity to drastically raise federal interest rates; making the stock market unstable. The dotcom bubble created another bubble: the telecom bubble. Companies raced to create lots of fiber optic cables to support the ever expanding Internet. There was too much building and spending however, and this caused a crash in the telecom industry. As a result, these many cascading factors popped the dotcom bubble. Most of the fastest growing companies crashed and burned, with Ebay and Amazon being some of the few survivors. The NASDAQ lost ⅔ of its value in this crash.
+            </p>
+
+
+            <ul>
+                <li class="btn active"></li>
+                <li class="btn"></li>
+                <li class="btn"></li>
+            </ul>
+
+        </div>
+        <div class="col-2">
+            <img src="pic-1-browser.jpg" id="banner">
+        </div>
+    </div>
+</div >
+<script>
+    const btn = document.getElementsByClassName("btn");
+    const banner = document.getElementById("banner");
+
+    btn[0].onclick = function(){
+        banner.src = "pic-1-browser.jpg";
+        animation();
+        this.classList.add("active");
+    }
+
+    btn[1].onclick = function(){
+        banner.src = "pic-2-browser.jpg";
+        animation();
+        this.classList.add("active");
+    }
+
+    btn[2].onclick = function(){
+        banner.src = "pic-3-browser.jpg";
+        animation();
+        this.classList.add("active");
+    }
+
+
+
+    function animation(){
+        banner.classList.add("zoom");
+        setTimeout(function(){
+            banner.classList.remove("zoom");
+        },500);
+
+        for(b of btn){
+            b.classList.remove("active");
+        }
+    }
+
+</script>
+
+<footer>
+    <div class="footer" style=" text-align: center; margin-right: 20px;  font-size: 15px; color: white; background-color: black">
+        &copy; <a href="https://github.com/shilpa271/OOP_proj.git"> 2021 Shilpa Parameshwara</a> - <a href="#">W3C</a>
+    </div>
+
+
+</footer>
+</body>
+
+</html>

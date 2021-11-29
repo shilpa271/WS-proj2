@@ -1,0 +1,101 @@
+<html lang="eng">
+<head>
+  <title>Internet Search</title>
+  <link rel="stylesheet" href="article1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+<div class="hero">
+
+  <div class="menu-bar">
+    <ul>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+
+
+      <li><a href="#">Video</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="invention.html">Invention of the internet</a></li>
+            <li><a href="browserwars.html">Browser wars</a></li>
+            <li><a href="internet-search.html">Internet Search</a></li>
+            <li><a href="dot-com.html">Dot Com Bubble</a></li>
+            <li><a href="People.html">People</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li><a href="articles.html">Articles</a></li>
+
+
+    </ul>
+  </div>
+  <div class="overlay"></div>
+
+  <div class="row">
+    <div class="col-1">
+      <h5>Browser Wars</h5>
+      <p>While the browser wars were happening,and browsing the internet was getting more and more accessible. It still lacked a directory or guide to site. Search Engines were the answer, but how they came to be is interesting. To understand how Internet search works, we have to go way back, before even Google. The roots of Search can be found at Stanford University. While going to Stanford Jerry Yang and David Filo they hit on an idea that would become the basis for what used to be America’s best known businesses, Yahoo! When they couldn’t find out UpToDate sports information to use in their basketball league, they decided to build a directory which show users where to find stuff they were looking for on the Internet. At the dawn of the Internet, no one was using it for business or commerce. One school of thought was that Internet was the new “media” and media had always been supported by advertisement. The founders of Yahoo! faced a serious dilemma.
+        Placing advertisements on their website risked alienating their users. But they had already been funded by the venture capitalists and there wasn’t another means to make money on their new site. Late in 1995, Yahoo began taking banner ads.
+        And the users didn’t seem to care! Their user base kept increasing. Yahoo! had shown how to make money on the Internet. The boom had begun! Yahoo’s primary competition was Excite. They had developed a better technology which, instead of websites catalogued and sorted by humans, Excite was doing it by pure software. It crawled the web for the search that the user typed and found pages matching it. It was rudimentary form of what Internet Search as it exists today. By 1997, the web was exploding, and the sites were busy redeveloping themselves as Portals, places filled with technology designed to keep users within the platform, for the benefit of advertisers. In the race to make money, however, the companies lost track of why the users were coming to their portals in the first place. To Search for something! Most of the search results came up to be sites wanting to sell you something rather than real results.
+      </p>
+
+
+      <ul>
+        <li class="btn active"></li>
+        <li class="btn"></li>
+        <li class="btn"></li>
+      </ul>
+
+    </div>
+    <div class="col-2">
+      <img src="pic-1-browser.jpg" id="banner">
+    </div>
+  </div>
+</div >
+<script>
+  const btn = document.getElementsByClassName("btn");
+  const banner = document.getElementById("banner");
+
+  btn[0].onclick = function(){
+    banner.src = "pic-1-browser.jpg";
+    animation();
+    this.classList.add("active");
+  }
+
+  btn[1].onclick = function(){
+    banner.src = "pic-2-browser.jpg";
+    animation();
+    this.classList.add("active");
+  }
+
+  btn[2].onclick = function(){
+    banner.src = "pic-3-browser.jpg";
+    animation();
+    this.classList.add("active");
+  }
+
+
+
+  function animation(){
+    banner.classList.add("zoom");
+    setTimeout(function(){
+      banner.classList.remove("zoom");
+    },500);
+
+    for(b of btn){
+      b.classList.remove("active");
+    }
+  }
+
+</script>
+<footer>
+  <div class="footer" style=" text-align: center; margin-right: 20px;  font-size: 15px; color: white; background-color: black">
+    &copy; <a href="https://github.com/shilpa271/OOP_proj.git"> 2021 Shilpa Parameshwara</a> - <a href="#">W3C</a>
+  </div>
+
+
+</footer>
+</body>
+
+</html>
